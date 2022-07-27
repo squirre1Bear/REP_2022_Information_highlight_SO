@@ -1,14 +1,22 @@
-__Replication package for paper "A First Look at Information Highlighting in Stack Overflow Answers", ICSME NIER track, 2022__
+##__Replication package for paper "A First Look at Information Highlighting in Stack Overflow Answers", ICSME NIER track, 2022__
 
-Preparing dataset
+_Preparing dataset
 1. Download the stackoverflow posts dataset from stackexchange platform and import it in stack overflow 
-2. Use MySQL commands to extract the dataset in 10 chunks
-How to run the code
-1. In "RQ1_" file, update 'source_file' according to the smaller dataset file path. 
+2. Use MySQL commands to extract the dataset in chunks. The dataset had 52166061 posts where 31,169,429 answers posts. The dataset was divided into ten smaller dataset of 3,000,000 answers except the last portion.
+MySQL command for fetching each chunks`SELECT * From Posts WHERE posttypeid = 2 ORDER BY Id LIMIT 30000000,1169430;`
+
+_RQ1: How prevalent is the information highlighting in Stack Overflow answers?
+How to run the code?
+1. In __"RQ1_for_individual_file_individual_tag_posts"__ file, update `source_file` according to the smaller dataset file path. 
 2. Update the functions parameters for the expected analysis.
 For getting the tag statistic based on the one post, run the getCaseNumberPerPost. Please update the second parameter based on the expected statistic. For example, if we want to find out statistics about bold tags, we will update the second parameter "tag_list_bold". 
 This will generate the dataframe containing the information on highlighted text and words' percentages.
 For getting the tag statistic based on the all cases, run the getCaseNumberPerTag. Please update the second parameter based on the expected statistic. For example, if we want to find out statistics about bold tags, we will update the second parameter "tag_list_bold". 
 This will generate the dataframe containing the information on highlighted text length and words.
 By updating the source file and tag_list parameter, we can get all the statistics from all the files.
-3.
+
+__Run the ipython file__
+1. To run this files, it's better to have jupyter notebook and run the cells
+__Run the python 3 file__
+1. Run `python .py`
+2. Run file2 and file3
