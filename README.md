@@ -9,6 +9,8 @@ MySQL command for fetching each chunks`SELECT * From Posts WHERE posttypeid = 2 
 
 __Run the ipython file__
  To run this files, it's better to have jupyter notebook and run the cells.
+ 
+ 
 __Run the python 3 file__
 Tags per post analysis
 1. Run `RQ_1_individual_tag_per_post.py` by updating the source file and tag parameter. 
