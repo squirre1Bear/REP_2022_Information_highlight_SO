@@ -25,6 +25,8 @@ __Run the ipython file__
 3. Run the `RQ1_for_individual_file_individual_tag_posts.ipynb` file for generating the csv files for smaller datasets.
 _Tags per post analysis :_ For getting the tag statistic based on one post, run the getCaseNumberPerPost. This will generate the dataframe containing the information on highlighted text and words' percentages. 
 _Tags per case analysis :_ For getting the tag statistic based on all cases, run the getCaseNumberPerTag. This will generate the dataframe containing the information on highlighted text length and words.
+4. Run the cells in `Combined_whole_data_per_post.ipynb` after getting the results for the whole dataset on one type of tag per post.
+5. Run the cells in `Combined_all_data_cases_per_tag.py` after getting the results for the whole dataset on one type of tag per case.
  
 __Run the python 3 file__
 
@@ -34,7 +36,7 @@ This portion provides an analysis based on each post. For example, to get the pe
 
 1. Perform the necessary changes in the code(filepath and tagtype).
 2. Run `RQ_1_individual_tag_per_post.py` for each type of tags and every smaller dataset. 
-3. Run `Combined_whole_data_per_post.py` after getting the results for the whole dataset on one type of tag.
+3. Run `Combined_whole_data_per_post.py` after getting the results for the whole dataset on one type of tag per post.
 
 
 _Tags per case analysis_
@@ -43,6 +45,6 @@ This portion provides an analysis of the tags and information length.
 
 1. Perform the necessary changes in the code(filepath and tagtype).
 2. Run `RQ_1_for_individual_file_individual_per_tag.py` for each type of tags and every smaller dataset.
-3. Run `Combined_all_data_cases_per_tag.py` after getting the results for the whole dataset on one type of tag.
+3. Run `Combined_all_data_cases_per_tag.py` after getting the results for the whole dataset on one type of tag per case.
 
 
