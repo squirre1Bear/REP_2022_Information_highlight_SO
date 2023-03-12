@@ -1,4 +1,4 @@
-# Replication package for paper "A First Look at Information Highlighting in Stack Overflow Answers", ICSME NIER track, 2022
+# Replication package for paper "A First Look at Information Highlighting in Stack Overflow Answers"
 
 __Preparing dataset__
 
@@ -48,3 +48,4 @@ This portion provides an analysis of the tags and information length.
 3. Run `Combined_all_data_cases_per_tag.py` after getting the results for the whole dataset on one type of tag per case.
 
 
+***RQ4: Can we recommend the highlighted content in SO answers automatically?***
