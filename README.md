@@ -28,7 +28,7 @@ _Tags per case analysis :_ For getting the tag statistic based on all cases, run
 4. Run the cells in `Combined_whole_data_per_post.ipynb` after getting the results for the whole dataset on one type of tag per post.
 5. Run the cells in `Combined_all_data_cases_per_tag.py` after getting the results for the whole dataset on one type of tag per case.
  
-__Run the python 3 file__
+***RQ1***
 
 _Tags per post analysis_
 
@@ -48,7 +48,7 @@ This portion provides an analysis of the tags and information length.
 3. Run `Combined_all_data_cases_per_tag.py` after getting the results for the whole dataset on one type of tag per case.
 
 
-***RQ4: Can we recommend the highlighted content in SO answers automatically?***
+***RQ4***
 Under the codes for RQ4 there are three folders; Create dataset, Evaluation and Model. 
 1. _Create dataset:_ In the `Create_BOE_tagged_csv_file.ipynb` file, update the formatting tags, start_tags and end tags with the expected tags for the model. This code helps to create the word and tag dataset. `Combine_all_csv_files.py` combines all the individual files created from `Create_BOE_tagged_csv_file.ipynb` file and creates train and test dataset. Then using `CoNLL_tsv_to_json.py` and `Json_to_pickle_file.py` help creating json and pickle train and test files. On the other hand, `CoNLL_words_to_sentences.py` file creates csv files of train and test files for better readability. 
 2. _Model:_`Ner_model.py` is the main file for traing the model. Change the labels to expected tags for training.
