@@ -7,7 +7,7 @@ __Preparing dataset__
 3. We used Datagrip software to use the MySQL. Use MySQL commands to extract the dataset in chunks. The dataset had 52,166,061 posts where 31,169,429 answers posts. In our case, the whole dataset was divided into 11 smaller datasets. The dataset was divided into ten smaller datasets of 3,000,000 answers except for the last portion.
 MySQL command for fetching each chunks`SELECT * From Posts WHERE posttypeid = 2 ORDER BY Id LIMIT 1,3000000;`
 
-***RQ1: How prevalent is the information highlighting in Stack Overflow answers?***
+***RQ1***
 
 __Necessary changes for running the code__
 
@@ -28,7 +28,6 @@ _Tags per case analysis :_ For getting the tag statistic based on all cases, run
 4. Run the cells in `Combined_whole_data_per_post.ipynb` after getting the results for the whole dataset on one type of tag per post.
 5. Run the cells in `Combined_all_data_cases_per_tag.py` after getting the results for the whole dataset on one type of tag per case.
  
-***RQ1***
 
 _Tags per post analysis_
 
@@ -49,6 +48,7 @@ This portion provides an analysis of the tags and information length.
 
 
 ***RQ4***
+
 Under the codes for RQ4 there are three folders; Create dataset, Evaluation and Model. 
 1. _Create dataset:_ In the `Create_BOE_tagged_csv_file.ipynb` file, update the formatting tags, start_tags and end tags with the expected tags for the model. This code helps to create the word and tag dataset. `Combine_all_csv_files.py` combines all the individual files created from `Create_BOE_tagged_csv_file.ipynb` file and creates train and test dataset. Then using `CoNLL_tsv_to_json.py` and `Json_to_pickle_file.py` help creating json and pickle train and test files. On the other hand, `CoNLL_words_to_sentences.py` file creates csv files of train and test files for better readability. 
 2. _Model:_`Ner_model.py` is the main file for traing the model. Change the labels to expected tags for training.
