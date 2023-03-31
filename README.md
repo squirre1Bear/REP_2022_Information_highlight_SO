@@ -54,4 +54,4 @@ Under the codes for RQ4 there are three folders; Create dataset, Evaluation and 
 2. _Model:_`Ner_model.py` is the main file for traing the model. Change the labels to expected tags for training.
 3. _Evaluation:_`NER_Confusion_matrix.py` makes confusion matrix for the test dataset. `Ner_evaluation_example.py` is used for checking the evaluating some texts for evaluating models.
 
-Link to the dataset:[Paper Dataset](https://zenodo.org/record/7734206#.ZCeLa3ZKi3A)
+*Link to the dataset used for RQ4:[Paper Dataset](https://zenodo.org/record/7734206#.ZCeLa3ZKi3A)*
